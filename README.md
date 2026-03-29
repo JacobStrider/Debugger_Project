@@ -1,2 +1,8 @@
 # Debugger_Project
-A C++ log analysis program that reads log files, classifies entries by severity, detects invalid logs, and summarizes recurring errors and module-level failures.
+# Log Analyzer
+
+A C++ program that reads log files and counts errors, warnings, and invalid entries.
+
+## How to run
+g++ main.cpp LogEntry.cpp LogAnalyzer.cpp -o analyzer
+./analyzer

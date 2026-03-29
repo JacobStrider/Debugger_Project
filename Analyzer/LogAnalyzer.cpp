@@ -37,7 +37,7 @@ void LogAnalyzer::analyze() {
     std::cout << "=== LOG ANALYSIS ===\n\n";
     std::cout << "Total Entries: " << logs.size() << "\n";
     std::cout << "INFO: " << info << "\n";
-    std::cout << "WARNING:" << warning << "\n";
+    std::cout << "WARNING: " << warning << "\n";
     std::cout << "ERROR: " << error << "\n";
     std::cout << "Invalid: " << invalid << "\n";
 
