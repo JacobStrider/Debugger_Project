@@ -37,7 +37,7 @@ void LogAnalyzer::analyze() {
     std::cout << "=== LOG ANALYSIS ===\n\n";
     std::cout << "Total Entries: " << logs.size() << "\n";
     std::cout << "INFO: " << info << "\n";
-    std::cout << "Warnings: " << warning << "\n";
+    std::cout << "WARNING:" << warning << "\n";
     std::cout << "ERROR: " << error << "\n";
     std::cout << "Invalid: " << invalid << "\n";
 
@@ -53,8 +53,7 @@ void LogAnalyzer::analyze() {
     }
 
     std::cout << "Most Frequent Error:\n";
-    std::cout << "_" <<topError << "(" << maxCount << " occurences)\n\n";
-
+    std::cout << "- " << topError << " (" << maxCount << " occurrences)\n\n";
     std::cout << "Errors by Module:\n";
     for (auto& pair : moduleErrors) {
         std::cout << "- " << pair.first << ": " << pair.second << "\n";
